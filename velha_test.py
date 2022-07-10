@@ -1,7 +1,4 @@
-# content of test_sample.py
-def func(x):
-    return x + 1
+from velha import jogo
 
-
-def test_answer():
-    assert func(3) == 5
+def test_1():
+    assert jogo([[2,2,2],[2,1,1],[0,1,1]]) == 1
