@@ -43,3 +43,29 @@ def jogo(matriz):
     
     elif matriz[0][2] == 2 and matriz[1][1] == 2 and matriz[2][0] == 2: # DIAGONAL
         return 1
+    
+    # CRITERIOS PARA O VENCER ---------------------------------------------
+    
+    if matriz[0][0] == 1 and matriz[0][1] == 1 and matriz[0][2] == 1: # HORIZONTAL
+        return 2
+    
+    elif matriz[1][0] == 1 and matriz[1][1] == 1 and matriz[1][2] == 1: # HORIZONTAL
+        return 2
+    
+    elif matriz[2][0] == 1 and matriz[2][1] == 1 and matriz[2][2] == 1: # HORIZONTAL
+        return 2
+    
+    elif matriz[0][0] == 1 and matriz[1][0] == 1 and matriz[2][0] == 1: # VERTICAL
+        return 2
+    
+    elif matriz[0][1] == 1 and matriz[1][1] == 1 and matriz[2][1] == 1: # VERTICAL
+        return 2
+    
+    elif matriz[0][2] == 1 and matriz[1][2] == 1 and matriz[2][2] == 1: # VERTICAL
+        return 2
+    
+    elif matriz[0][0] == 1 and matriz[1][1] == 1 and matriz[2][2] == 1: # DIAGONAL
+        return 2
+    
+    elif matriz[0][2] == 1 and matriz[1][1] == 1 and matriz[2][0] == 1: # DIAGONAL
+        return 2
